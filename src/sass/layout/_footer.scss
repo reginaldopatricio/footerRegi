@@ -2,3 +2,51 @@
 /* @FOOTER */
 /* ********* */
 
+footer{
+    background-color: map-get($colores, fondo);
+    .fondo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .logo{
+            padding-top: map-get($tamaño, padingLogo);
+        }
+        .lista{
+            display: flex;
+            list-style: none;
+            gap: map-get($tamaño, gapLista );
+        }
+        p{
+            text-align: center; 
+            padding-bottom: map-get($tamaño, padingParafo); 
+        }
+    }
+}
+.logo, .lista, .parafo{
+    color: map-get($colores, letra)
+}
+
+.parteBaja{
+    display: flex;
+    height: map-get($tamaño, heightParteBaja);
+    width: map-get($tamaño, widthParteBaja);
+    .barIzquierda{
+        width: map-get($tamaño, widthbarIzquierda);
+        height: map-get($tamaño, heightIzquierda);
+        background-color: map-get($colores, bajo);
+        border-top-right-radius: map-get($tamaño, borderIzquierda)
+    }
+
+    .icono{
+        text-align: center;
+        width: map-get($tamaño, widthIcono);
+    }
+
+    .barDere{
+        width: map-get($tamaño, widthbarDere );
+        height: map-get($tamaño, heightDercha);
+        background-color: map-get($colores, bajo);
+        border-top-left-radius: map-get($tamaño, borderDerecha);
+    }
+}
