@@ -1,0 +1,64 @@
+
+
+/* CSS BASICO*/
+/*************/
+
+/*variables*/
+:root{
+    --colorBase: #200063;
+    --colorBajo: #150043;
+    --colorLetra: #FFFFFF;
+}
+
+/*
+****************************************
+*/
+footer{
+    background-color: var(--colorBase);
+}
+
+.fondo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.lista{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+p{
+    text-align: center;  
+}
+
+.logo, .lista, .parafo{
+    color: var(--colorLetra);
+}
+
+.parteBaja{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.barIzquierda {
+    width: 50%;
+    background-color: var(--colorBajo);
+    border-top-right-radius: 80px;
+}
+.barDere{
+    width: 50%;
+    background-color: var(--colorBajo);
+    border-top-left-radius: 80px;
+}
+
+.icono{
+    text-align: center;
+    width: 20%;
+}
+.icono img{
+   
+    width: 24px;
+}
